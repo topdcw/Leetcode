@@ -28,17 +28,3 @@ class Solution:
         #寻找data中的最大值
         return max(data)
 
-
-
-
-    def myrob(self,nums,lens):
-        if lens==1 :
-            return nums[0]
-        elif lens==2 :
-            return nums[0] if nums[0]>nums[1] else nums[1]
-        else :
-            return myrob(nums,lens-1)
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
